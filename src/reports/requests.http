@@ -11,3 +11,14 @@ Content-Type: application/json
 	"lng": 12,
 	"price": 300000
 }
+
+### approve report
+PATCH http://localhost:3000/reports/1 HTTP/1.1
+Content-Type: application/json
+
+{
+	"approved": true
+}
+
+### get estimate for existing vehicle
+GET http://localhost:3000/reports?make=suzuki&model=mehran&year=1992&milleage=200000&lat=12&lng=12 HTTP/1.1
