@@ -1,0 +1,13 @@
+### create sale report
+POST http://localhost:3000/reports HTTP/1.1
+Content-Type: application/json
+
+{
+	"make": "suzuki",
+	"model": "mehran",
+	"year": 1992,
+	"milleage": 123999,
+	"lat": 12,
+	"lng": 12,
+	"price": 300000
+}
