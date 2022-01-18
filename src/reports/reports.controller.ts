@@ -9,11 +9,11 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { AdminGaurd } from 'src/gaurds/admin.gaurd';
-import { AuthGaurd } from 'src/gaurds/auth.gaurd';
-import { Serialize } from 'src/interceptors/serialize.interceptor';
-import { CurrentUser } from 'src/users/decorators/current-user.decorator';
-import { User } from 'src/users/user.entity';
+import { AdminGaurd } from '../gaurds/admin.gaurd';
+import { AuthGaurd } from '../gaurds/auth.gaurd';
+import { Serialize } from '../interceptors/serialize.interceptor';
+import { CurrentUser } from '../users/decorators/current-user.decorator';
+import { User } from '../users/user.entity';
 import { ApproveReportDto } from './dtos/approve-report.dto';
 import { CreateReportDto } from './dtos/create-report.dto';
 import { GetEstimateDto } from './dtos/get-estimate.dto';
